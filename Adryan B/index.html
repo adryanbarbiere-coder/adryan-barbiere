@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copa do Mundo 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Copa do Mundo 2026 - Acompanhamento</h1>
+        
+        <div class="tab-menu">
+            <button class="tab-button active" onclick="abrirAba(event, 'Copa')">Início & Brasil</button>
+            <button class="tab-button" onclick="abrirAba(event, 'Grupos')">Fase de Grupos</button>
+            <button class="tab-button" onclick="abrirAba(event, 'Semi')">Semifinal</button>
+            <button class="tab-button" onclick="abrirAba(event, 'Final')">Final</button>
+        </div>
+
+        <div id="Copa" class="tab-content active">
+            <h2>Abertura e Primeiros Jogos do Brasil</h2>
+            <p>O torneio se iniciou em 11 de Junho de 2026 na América do Norte. O Brasil busca o Hexa!</p>
+            <p>Status da Abertura:</p>
+            <div class="cronometro" id="timer-copa">Carregando...</div>
+        </div>
+
+        <div id="Grupos" class="tab-content">
+            <h2>Fim da Fase de Grupos</h2>
+            <p>As seleções lutam para ficar entre os primeiros e avançar para o mata-mata.</p>
+            <p>Tempo restante para o fim da fase:</p>
+            <div class="cronometro" id="timer-grupos">Carregando...</div>
+        </div>
+
+        <div id="Semi" class="tab-content">
+            <h2>Fim das Semifinais</h2>
+            <p>Os 4 melhores times do mundo decidem quem vai para a grande final.</p>
+            <p>Tempo restante:</p>
+            <div class="cronometro" id="timer-semi">Carregando...</div>
+        </div>
+
+        <div id="Final" class="tab-content">
+            <h2>A Grande Final</h2>
+            <p>O último jogo que definirá o campeão do mundo de 2026 (19 de Julho).</p>
+            <p>Tempo restante:</p>
+            <div class="cronometro" id="timer-final">Carregando...</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
